@@ -1,0 +1,13 @@
+name = "Wizards (RPG Series)"
+filename = "wizards-fabric-3.1.1+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/NkGaQMDA/versions/D9I8l5oX/wizards-fabric-3.1.1%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "0d3d5af2ef112003f69faba8b3e7254274f5d1c2445820e764cf8b93b7ec65d654edc71ab035dcd4ba8e719eef896a713bd8671f8ce077dd517c3e71f3a24d33"
+
+[update]
+[update.modrinth]
+mod-id = "NkGaQMDA"
+version = "D9I8l5oX"

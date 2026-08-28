@@ -21,8 +21,18 @@ hash = "17fc9c6cab5ae0ea6973440f143ad6ffa4e5d373749c80077b631dbbe4df3f3b"
 metafile = true
 
 [[files]]
+file = "mods/archers.pw.toml"
+hash = "bdaedf1e185efb6b0c3abbfb2221e019cf00a1168131a30aae99b4483fee4d31"
+metafile = true
+
+[[files]]
 file = "mods/architectury-api.pw.toml"
 hash = "0fb3808193da9b587367337d12d202d7b006e2522637a6502913d66a84f8626f"
+metafile = true
+
+[[files]]
+file = "mods/armor-model-api.pw.toml"
+hash = "c826d580186c9c20a5d16ee427496db0820f394b564d3ec5cad0a7d7f8cf3631"
 metafile = true
 
 [[files]]
@@ -356,6 +366,11 @@ hash = "60a3d23eb73106ecb6ba5a391d4539e3557cbd9b1f3611a2de08052155d78b3a"
 metafile = true
 
 [[files]]
+file = "mods/paladins-and-priests.pw.toml"
+hash = "e85d27665a47635e5311c50b2f0a71a961cba6e4128e944fc3ada25e0f74d8a6"
+metafile = true
+
+[[files]]
 file = "mods/particle-rain.pw.toml"
 hash = "58e380b4d66907130eaa480252def925457d1033100571c946aaf9179a1e7bde"
 metafile = true
@@ -401,8 +416,18 @@ hash = "d3f633dd12cd039a4e58dd398d1c80a324b0d78b9da5b3972b69640bfed211ed"
 metafile = true
 
 [[files]]
+file = "mods/rogues-and-warriors.pw.toml"
+hash = "7da3f501f8cd7a76ebd9835bc5bf3430c30b4e638c65de9252a655d98c6fb454"
+metafile = true
+
+[[files]]
 file = "mods/rpgdifficulty.pw.toml"
 hash = "605cc8710a7f577437cb5b1f45ac6c14052e91873ba4edf54a994749dfed1142"
+metafile = true
+
+[[files]]
+file = "mods/runes.pw.toml"
+hash = "d60b3658f12c9b394a023f6474e8a1452c1c44ec73853ba7850445418f8f66bb"
 metafile = true
 
 [[files]]
@@ -451,6 +476,11 @@ hash = "6d981aecd3cbe1e75f584cc0762f6b8d7e5a6929e1560f531649a850575d2ac0"
 metafile = true
 
 [[files]]
+file = "mods/structure-pool-api.pw.toml"
+hash = "b35dc0035b4a1554f912fa5c26609a29e17f00886ffa8812b997f97a5b777ff5"
+metafile = true
+
+[[files]]
 file = "mods/supplementaries.pw.toml"
 hash = "766f198efc56fa0ea829f15d9029bdb0179147c7c26520b01eb5422af3a38bec"
 metafile = true
@@ -488,6 +518,11 @@ metafile = true
 [[files]]
 file = "mods/waystones.pw.toml"
 hash = "688160e1bc4f60248dd8aebc2f9a3909ad0d5557002c83fe3c8c66e79890533d"
+metafile = true
+
+[[files]]
+file = "mods/wizards.pw.toml"
+hash = "b27042e83b95c35d7234776f86b7696451f7876b29910beccf1cfad41e8a871e"
 metafile = true
 
 [[files]]
@@ -553,4 +588,9 @@ metafile = true
 [[files]]
 file = "resourcepacks/stay-true.pw.toml"
 hash = "e53a1e480f2a8051cc6581a0d7323fb3b31c317562caa12c37eab9e952cc9300"
+metafile = true
+
+[[files]]
+file = "shaderpacks/complementary-reimagined.pw.toml"
+hash = "ea258ed5bf495d9017eeadc3cbf9bd67b1e672d843826bc077135548b5bc699e"
 metafile = true

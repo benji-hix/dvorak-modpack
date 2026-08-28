@@ -1,12 +1,12 @@
 name = "dvorak"
 author = "Benjamin"
-version = "1.2.2"
+version = "1.3.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "ba09bb836b6b8707ababd6be788f75d97dd01e008072a5f6b13945f9f24fa8ff"
+hash = "7ff08aa1410441dba43a06d7d83cab472b663be3690b90f040acc931dd00e71f"
 
 [versions]
 fabric = "0.19.3"
