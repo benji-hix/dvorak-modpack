@@ -42,7 +42,9 @@ has_section = text.lstrip().startswith('[')
 cp.read_string(text if has_section else '[General]\n' + text)
 sec = cp.sections()[0]
 cp[sec]['OverrideCommands'] = 'true'
-cp[sec]['PreLaunchCommand'] = cmd
+# QSettings INI: values containing quotes must be wrapped in quotes with inner ones escaped,
+# else Prism drops the space after "$INST_JAVA" (java-jar execve failure).
+cp[sec]['PreLaunchCommand'] = '"' + cmd.replace('"', '\\"') + '"'
 with open(cfg_path, 'w') as f:
     cp.write(f, space_around_delimiters=False)
 EOF

@@ -1,0 +1,13 @@
+name = "Ranged Weapon API"
+filename = "ranged_weapon_api-fabric-2.3.3+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/AqaIIO6D/versions/j6w0ptJx/ranged_weapon_api-fabric-2.3.3%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "95cd21612acd5506ae023856dfe7f712e5ca444c605083212c278f74b518930e5c53ce18a657f95ba817ba1ddeaf530da9a3d41ef3bcb454a778d789f421f80b"
+
+[update]
+[update.modrinth]
+mod-id = "AqaIIO6D"
+version = "j6w0ptJx"

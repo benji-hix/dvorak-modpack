@@ -111,6 +111,11 @@ hash = "cf82858ab1b2ccb3ac0af8f11d8e5f71440c903ef94525e2b6b45a41a4ccf43d"
 metafile = true
 
 [[files]]
+file = "mods/critical-strike.pw.toml"
+hash = "843efe26bd1e6b18636fccc522b6169fd57ef85ec31494a770de5f38436cd65e"
+metafile = true
+
+[[files]]
 file = "mods/critters-and-companions.pw.toml"
 hash = "e27ff19b73147521eff10c9cf0d4d51e36a462d1e67f460ee33287e4356e3fe1"
 metafile = true
@@ -386,6 +391,11 @@ hash = "29583ec68be91596c7444b0fcd5609676d4bc0a1d083336fb2c279e3b0e09b3f"
 metafile = true
 
 [[files]]
+file = "mods/ranged-weapon-api.pw.toml"
+hash = "a74f260f766de498a0ce3e601b5586285e796e285b526f1a6bac86bff49ae413"
+metafile = true
+
+[[files]]
 file = "mods/resourceful-lib.pw.toml"
 hash = "d3f633dd12cd039a4e58dd398d1c80a324b0d78b9da5b3972b69640bfed211ed"
 metafile = true
@@ -412,7 +422,7 @@ metafile = true
 
 [[files]]
 file = "mods/skill-tree.pw.toml"
-hash = "bed78c3336d3a9d810fa9b33a0e181198ea368285b6f343b2cad1489c18f6e76"
+hash = "c931d808c850441ae1f0b92bae0bf4bb38646647ae586e52096716937b17e284"
 metafile = true
 
 [[files]]
