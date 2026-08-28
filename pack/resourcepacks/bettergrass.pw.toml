@@ -1,0 +1,13 @@
+name = "Better Grass"
+filename = "§fBetter §a§lGrass §71.21.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/SiVYAB4s/versions/eQcoGzHc/%C2%A7fBetter%20%C2%A7a%C2%A7lGrass%20%C2%A771.21.zip"
+hash-format = "sha512"
+hash = "b6e1e42fc9c19e55268fefe295dec883663d85b555b83f1e6fa095b5ec4c4b00162ad234aafe96f43ad8f3498ae7ecb5cb496197cfc5e9599c1ba8687d38fa4a"
+
+[update]
+[update.modrinth]
+mod-id = "SiVYAB4s"
+version = "eQcoGzHc"

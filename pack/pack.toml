@@ -1,0 +1,13 @@
+name = "dvorak"
+author = "Benjamin"
+version = "1.2.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "a9a4ddd0081cf314645bc5a91347324ac82ee8c51deb1e1ca2851e6fbf42ba5a"
+
+[versions]
+fabric = "0.19.3"
+minecraft = "1.21.1"

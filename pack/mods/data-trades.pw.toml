@@ -1,0 +1,13 @@
+name = "Data Trades"
+filename = "data_trades-fabric-3.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/nm1MuVrD/versions/sK4Q0Vu9/data_trades-fabric-3.0.1.jar"
+hash-format = "sha512"
+hash = "a8f58282027ab3d6f931f3a7e3ec75c7b070833b504cdfbefbda5bf08a98516313974295991bdba3811068180609fa82e3e1a49be0b6ec866277d1776b982b67"
+
+[update]
+[update.modrinth]
+mod-id = "nm1MuVrD"
+version = "sK4Q0Vu9"

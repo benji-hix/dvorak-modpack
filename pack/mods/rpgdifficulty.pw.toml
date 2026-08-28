@@ -1,0 +1,13 @@
+name = "RPG Difficulty"
+filename = "rpgdifficulty-1.4.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/G5AvCOPI/versions/K9OidMod/rpgdifficulty-1.4.0.jar"
+hash-format = "sha512"
+hash = "fbe4e13d7aa3d45d002d7fcfd49c1a9a25f515291a239f2a510d62d6b1ad21825be521a7e1a3aa32529b59bc5aca9e2c3eb9e0412881d0ea93cd1498c37be50f"
+
+[update]
+[update.modrinth]
+mod-id = "G5AvCOPI"
+version = "K9OidMod"

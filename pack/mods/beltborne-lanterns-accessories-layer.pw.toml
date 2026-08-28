@@ -1,0 +1,13 @@
+name = "Accessories Beltborn Lantern"
+filename = "bl_accessories_layer-1.2.2-fabric+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/geZ7ilkE/versions/hlv98CPO/bl_accessories_layer-1.2.2-fabric%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "012ec3c8eac926d7df8349c6fef5a509be97f1afafac11fa95caff5bec2a6bbfd89f6a548a2035a15c874bff7e2eae496b9d77d22747852552bd7c500cfce2a0"
+
+[update]
+[update.modrinth]
+mod-id = "geZ7ilkE"
+version = "hlv98CPO"

@@ -1,0 +1,13 @@
+name = "NutritionZ"
+filename = "nutritionz-1.1.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/9IASI8W8/versions/n4C4phWz/nutritionz-1.1.2.jar"
+hash-format = "sha512"
+hash = "5338b35420de5446d60e41ffe2d05ebd777ebad7e5985937521452ce91b72acd309ac260bb0d39bf00586fe30d268c2f90f49929519bc6568bbb592a3221bc81"
+
+[update]
+[update.modrinth]
+mod-id = "9IASI8W8"
+version = "n4C4phWz"

@@ -1,0 +1,13 @@
+name = "Hungrier"
+filename = "hungrier-1.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/5Opza4ve/versions/zrCQbhUD/hungrier-1.2.jar"
+hash-format = "sha512"
+hash = "06b04a91c6ac05cf9262d4a958edab24b056c687454a8bef0618d06fa67c261fe98ec2b0ed8afd2aab02122c964ccf98c4d9820bc7a31b0df0ea34328eae5e6e"
+
+[update]
+[update.modrinth]
+mod-id = "5Opza4ve"
+version = "zrCQbhUD"

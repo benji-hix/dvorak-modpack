@@ -1,0 +1,13 @@
+name = "Craftable Gunpowder"
+filename = "craftable-gunpowder-1.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/SKou4IHt/versions/FUYkens9/craftable-gunpowder-1.4.jar"
+hash-format = "sha512"
+hash = "187ea77b2c9b389a3f80cdaf1af02002079c477c19cd699016231e087e4c68794ec6df39c23120ebaca1eb4fe59e835406f8607028300ba37f359c8081b2cd72"
+
+[update]
+[update.modrinth]
+mod-id = "SKou4IHt"
+version = "FUYkens9"

@@ -1,0 +1,13 @@
+name = "Item Components"
+filename = "item-components-1.1+1.21.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/wOl8aLro/versions/BXT6xC81/item-components-1.1%2B1.21.jar"
+hash-format = "sha512"
+hash = "762ee17c4d8fc07c6fac552864550534eba3c89dea2c22cf2e79c7abec398570d9992074bd12b1521a89aa472e703d2d969a7b7b7a7d0c75e975becccd3e8e3a"
+
+[update]
+[update.modrinth]
+mod-id = "wOl8aLro"
+version = "BXT6xC81"

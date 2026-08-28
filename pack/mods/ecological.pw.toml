@@ -1,0 +1,13 @@
+name = "Ecological"
+filename = "ecological-0.3.0+1.21-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/cnDVUV99/versions/dfvbaW7q/ecological-0.3.0%2B1.21-1.21.1.jar"
+hash-format = "sha512"
+hash = "1cd586649f2d5ce45b2ee9e634c1e66b5a8b7d8767ecc004b19480c9cd9b6638a0243798584e77727818705a5641eeb1fe1af456a02565017d37c5ede51ef2a4"
+
+[update]
+[update.modrinth]
+mod-id = "cnDVUV99"
+version = "dfvbaW7q"

@@ -1,0 +1,13 @@
+name = "CropXp"
+filename = "cropxp-fabric-1.21.1-2.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/4iW8x023/versions/7GIFctbj/cropxp-fabric-1.21.1-2.0.0.jar"
+hash-format = "sha512"
+hash = "3275ff6cbc09113e517cde3c6114988c88ffffea5be6ff9b89ab85f0f18a8dda8b3e6899bd9f7a33c207809108df1641ce7510a298283a3ef04f7005bc3800da"
+
+[update]
+[update.modrinth]
+mod-id = "4iW8x023"
+version = "7GIFctbj"

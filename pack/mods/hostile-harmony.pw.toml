@@ -1,0 +1,13 @@
+name = "Hostile Harmony"
+filename = "hostileharmony-fabric-1.21.1-1.0.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/VklCD9BR/versions/V69Z9D9p/hostileharmony-fabric-1.21.1-1.0.4.jar"
+hash-format = "sha512"
+hash = "e72028ca9777d5a75fee362864882256bb0f2cd58230f6e4d92d008c8e66a741e1f58ca5d0a01884b3e44b8e24390f4e8044a3a56c38867e2710dd6b80a05121"
+
+[update]
+[update.modrinth]
+mod-id = "VklCD9BR"
+version = "V69Z9D9p"

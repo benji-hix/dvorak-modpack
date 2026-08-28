@@ -1,0 +1,13 @@
+name = "Beltborn Lantern"
+filename = "beltborne_lanterns-1.2.5-fabric+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/NUFDZAKS/versions/PPvQKkXm/beltborne_lanterns-1.2.5-fabric%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "52e5e583ac17b74e833114b1f4cab188ba7f0b4ad6fe6572571ab945662cb7c1b349311af7c8c75f65244a9d437a8cfc9a9f5115887215c642e6ffd82b8ec721"
+
+[update]
+[update.modrinth]
+mod-id = "NUFDZAKS"
+version = "PPvQKkXm"

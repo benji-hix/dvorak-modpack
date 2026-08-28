@@ -1,0 +1,13 @@
+name = "Custom Time Cycle"
+filename = "customtimecycle-fabric-0.1.6-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Xuf4fk5b/versions/AykEapdy/customtimecycle-fabric-0.1.6-1.21.1.jar"
+hash-format = "sha512"
+hash = "45a7b3002c234adf45b38c31ff1523012fdf4d1b9726943a0369e5070cea93750f5b35723cc0f1cf82a1045b440b5ee76f14f83b3b7c6f3e58829d93fa76adef"
+
+[update]
+[update.modrinth]
+mod-id = "Xuf4fk5b"
+version = "AykEapdy"
