@@ -33,5 +33,5 @@ cd ..
 [ -f setup-instance.sh ] && mv setup-instance.sh archive/scripts/
 rm -f .git/index.lock   # leftover from sandboxed init
 git add -A
-git commit -m "1.2.0: dvorak packwiz pack + launcher auto-update setup (adds cupboard)"
+git commit -m "1.2.0: rain settlement packwiz pack + launcher auto-update setup (adds cupboard)"
 echo "Done. Now create the GitHub repo and push (commands from Claude)."

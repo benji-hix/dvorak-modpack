@@ -1,16 +1,16 @@
 #!/bin/bash
 # ONE-TIME per machine: wires a Prism instance to auto-update from the GitHub pack.
-# Usage: ./setup-launcher.sh [instance-name]   (default: dvorak)
+# Usage: ./setup-launcher.sh [instance-name]   (default: rain-settlement)
 # After this, just launch the instance — every launch syncs mods/configs to the repo.
 set -euo pipefail
 
 GITHUB_USER="benji-hix"
-PACK_URL="https://raw.githubusercontent.com/$GITHUB_USER/dvorak-modpack/main/pack/pack.toml"
+PACK_URL="https://raw.githubusercontent.com/$GITHUB_USER/rain-settlement/main/pack/pack.toml"
 BOOTSTRAP_URL="https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar"
 
 pgrep -qi prismlauncher && { echo "Quit Prism Launcher first (it overwrites instance.cfg on exit)."; exit 1; }
 
-INSTANCE="${1:-dvorak}"
+INSTANCE="${1:-rain-settlement}"
 BASE="$HOME/Library/Application Support/PrismLauncher/instances/$INSTANCE"
 MCDIR=""
 for d in "$BASE/minecraft" "$BASE/.minecraft"; do [ -d "$d" ] && MCDIR="$d" && break; done
