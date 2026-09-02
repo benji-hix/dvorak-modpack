@@ -122,3 +122,25 @@ Custom Time Cycle 0.1.6 bundles fabric-permissions-api 0.3.3 (built for 1.21.2+)
 the 0.2 that Do a Barrel Roll 3.7.3 bundles. Rain 1.6.2 restores the 0.1.4 pin from commit
 `c5da4a6`. Open-Air runs 0.1.6 server-side next to Do a Barrel Roll; whether the dedicated server
 avoids this through another permissions provider is unverified and worth checking there.
+
+## 8. JVM segfaults on the bundled Microsoft JDK (2026-09-01)
+
+Two HotSpot native crashes in the Rain instance, both on Prism's `java-runtime-delta`
+(Microsoft OpenJDK 21.0.7+6, macOS 27, Apple M5):
+
+- 2026-08-27 22:09 (`hs_err_pid97841.log`, instance then named dvorak, no lightning mod):
+  `SIGSEGV` in `Chunk::chop()` on C2 CompilerThread0.
+- 2026-09-01 22:06 (`hs_err_pid81241.log`): `SIGSEGV` in `SymbolTable::do_lookup` on the Render
+  thread during `KnotClassLoader.loadClass` from `PlayerRenderer`, while five Distant Horizons
+  render-loader threads were defining classes. The world had been created, the spell registry
+  synced, and the player had joined; no frame in the crashed thread names lightning_expansion.
+
+Open-Air's instance runs the same JDK with `JvmArgs=-XX:+UseZGC` and plays for hours; Rain ran
+the default G1, which Distant Horizons warns about at startup. Decision: match Open-Air
+(`-XX:+UseZGC`, Override Java args on). If it recurs, switch Rain's Java to the Temurin 21.0.12
+JRE Prism already has (`java/eclipse_temurin_jre21.0.12+8`). Unverified either way.
+
+Also observed, pre-existing and non-fatal: Just Enough Resources throws
+`NoClassDefFoundError: jeresources.api.drop.LootDrop` in both JEI plugin passes; stale
+`critical_strike:*` attribute references from the removed Critical Strike mod remain in this
+instance's configs.
