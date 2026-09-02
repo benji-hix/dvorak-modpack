@@ -144,3 +144,24 @@ Also observed, pre-existing and non-fatal: Just Enough Resources throws
 `NoClassDefFoundError: jeresources.api.drop.LootDrop` in both JEI plugin passes; stale
 `critical_strike:*` attribute references from the removed Critical Strike mod remain in this
 instance's configs.
+
+### 8a. ZGC did not fix it; switched to Temurin (2026-09-02)
+
+Third native crash, `hs_err_pid90680.log`, 2026-09-02 00:56, after 2h25m of uptime and ~15s in
+the Test world: `SIGSEGV` on ZGC worker thread `XWorker#1` in
+`XLiveMap::iterate_segment(ObjectClosure*, unsigned long, unsigned long, unsigned long)`. The
+crashed thread has no Java frames — this is inside the collector itself (`XLiveMap` is JDK 21's
+non-generational ZGC). Command line confirms `-XX:+UseZGC` was active, so section 8's decision
+was in force and did not hold.
+
+Taking section 8's stated fallback: Rain's `JavaPath` now points at
+`java/eclipse_temurin_jre21.0.12+8` (Temurin 21.0.12+8) instead of `java-runtime-delta`
+(Microsoft 21.0.7+6); `JvmArgs=-XX:+UseZGC` kept, matching Open-Air. `JavaSignature` dropped so
+Prism recomputes it; previous config saved as `instance.cfg.bak-2026-09-02`. Open-Air is still on
+the Microsoft JDK and is untouched — if Rain proves stable on Temurin, that is the next thing to
+mirror. Unverified until Rain plays a long session without a native crash.
+
+Note on attribution: the macOS crash report for the 22:06 run (`pid 81241`, launched 22:04:34)
+predates `glider-accessory-0.1.0.jar` being copied into `mods/` at 22:26, so neither that crash
+nor this one implicates the new mod. `glider_accessory 0.1.0` loaded in the 00:56 session with no
+mixin error, and its data pack was picked up on world load ("Found new data pack glider_accessory").
