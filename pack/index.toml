@@ -240,7 +240,7 @@ metafile = true
 
 [[files]]
 file = "mods/custom-time-cycle.pw.toml"
-hash = "76d3f7a71ea20fb4cde7261cfc8b71d3630448b5ab7f13a70ba9a1cd6d041cb6"
+hash = "919b10bf19d596b43f04c212e4b7a26c58df3afd35984aee56aa2a251204fda2"
 metafile = true
 
 [[files]]

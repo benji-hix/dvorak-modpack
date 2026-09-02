@@ -113,3 +113,12 @@ Reason beyond the launch fix: single-player runs an integrated server, so a loca
 must carry the server-side mods to match what Open-Air actually runs. Content and versions are
 unchanged; only `index.toml` hashes now differ from Open-Air 1.0.30. Watch item 4a (Custom Time
 Cycle 0.1.6 on the client) becomes live with this change.
+
+## 7. Custom Time Cycle pinned to 0.1.4 again (1.6.2, 2026-09-01)
+
+Watch item 4a fired on the first world join: `NoSuchMethodError ServerPlayer.method_64396` from
+`fabric-permissions-api` via Do a Barrel Roll's config handshake. Cause confirmed from the jars:
+Custom Time Cycle 0.1.6 bundles fabric-permissions-api 0.3.3 (built for 1.21.2+), which outranks
+the 0.2 that Do a Barrel Roll 3.7.3 bundles. Rain 1.6.2 restores the 0.1.4 pin from commit
+`c5da4a6`. Open-Air runs 0.1.6 server-side next to Do a Barrel Roll; whether the dedicated server
+avoids this through another permissions provider is unverified and worth checking there.
