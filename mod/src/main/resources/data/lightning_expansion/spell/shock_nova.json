@@ -1,0 +1,63 @@
+{
+  "school": "spell_power:lightning",
+  "range": 6.0,
+  "tier": 2,
+  "group": "lightning_storm",
+  "learn": {},
+  "active": {
+    "cast": {
+      "duration": 1.5,
+      "animation": { "id": "spell_engine:one_handed_area_charge" },
+      "sound": { "id": "spell_engine:generic_arcane_casting", "randomness": 0.0 },
+      "particles": [
+        {
+          "id": "spell_engine:magic_spell",
+          "appearance": { "color": 4284932351, "motion": "ASCEND" },
+          "batch": { "count": 1.0, "shape": "PIPE", "anchor": "ENTITY", "vertical_origin": 0.1, "min_speed": 0.05, "max_speed": 0.1, "width_factor": 2.0 }
+        }
+      ]
+    }
+  },
+  "release": {
+    "animation": { "id": "spell_engine:one_handed_area_release" },
+    "visuals": {
+      "particles": [
+        {
+          "id": "spell_engine:magic_spark",
+          "appearance": { "color": 4294963574, "motion": "DECELERATE" },
+          "batch": { "count": 80.0, "shape": "SPHERE", "anchor": "ENTITY", "min_speed": 0.7, "max_speed": 0.7 }
+        },
+        {
+          "id": "spell_engine:magic_spark",
+          "appearance": { "color": 4284932351, "motion": "DECELERATE" },
+          "batch": { "count": 80.0, "shape": "SPHERE", "anchor": "ENTITY", "min_speed": 0.7, "max_speed": 0.7, "pre_travel": 2.0 }
+        },
+        {
+          "id": "spell_engine:area_effect_574",
+          "appearance": { "color": 4284932351, "scale_with": "RANGE" },
+          "batch": { "count": 1.0, "shape": "NONE", "anchor": "ENTITY" }
+        }
+      ]
+    },
+    "sound": { "id": "minecraft:entity.lightning_bolt.impact", "volume": 0.8, "pitch": 0.9 }
+  },
+  "target": { "type": "AREA", "area": { "vertical_range_multiplier": 0.5 } },
+  "impacts": [
+    {
+      "action": { "type": "DAMAGE", "damage": { "spell_power_coefficient": 0.9, "knockback": 0.8 } },
+      "visuals": {
+        "particles": [
+          { "id": "electric_spark", "appearance": {}, "batch": { "count": 30.0, "shape": "SPHERE", "anchor": "ENTITY", "min_speed": 0.2, "max_speed": 0.7 } }
+        ]
+      }
+    },
+    {
+      "action": { "type": "STATUS_EFFECT", "status_effect": { "effect_id": "minecraft:slowness", "duration": 2.0, "amplifier": 1 } }
+    }
+  ],
+  "cost": {
+    "exhaust": 0.2,
+    "cooldown": { "duration": 10.0 },
+    "item": { "id": "runes:lightning_stone" }
+  }
+}

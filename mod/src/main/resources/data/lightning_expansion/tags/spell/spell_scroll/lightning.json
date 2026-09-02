@@ -1,0 +1,9 @@
+{
+  "values": [
+    { "id": "lightning_expansion:chain_lightning", "required": false },
+    { "id": "lightning_expansion:shock_nova", "required": false },
+    { "id": "lightning_expansion:static_charge", "required": false },
+    { "id": "lightning_expansion:arc_lightning", "required": false },
+    { "id": "lightning_expansion:thunderstorm", "required": false }
+  ]
+}

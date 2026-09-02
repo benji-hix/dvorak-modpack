@@ -1,0 +1,58 @@
+{
+  "school": "spell_power:lightning",
+  "range": 48.0,
+  "tier": 0,
+  "group": "lightning_weapon",
+  "learn": {},
+  "active": {
+    "cast": {
+      "duration": 1.0,
+      "animation": { "id": "spell_engine:one_handed_projectile_charge" },
+      "sound": { "id": "spell_engine:generic_arcane_casting", "randomness": 0.0 },
+      "particles": [
+        {
+          "id": "spell_engine:magic_spell",
+          "appearance": { "color": 4284932351, "motion": "ASCEND" },
+          "batch": { "count": 1.0, "shape": "PIPE", "anchor": "ENTITY", "vertical_origin": 0.1, "min_speed": 0.05, "max_speed": 0.1, "width_factor": 2.0 }
+        }
+      ]
+    }
+  },
+  "release": {
+    "animation": { "id": "spell_engine:one_handed_projectile_release" },
+    "sound": { "id": "minecraft:entity.lightning_bolt.impact", "volume": 0.4, "pitch": 1.6 }
+  },
+  "target": { "type": "AIM", "aim": {} },
+  "deliver": {
+    "type": "PROJECTILE",
+    "projectile": {
+      "projectile": {
+        "client_data": {
+          "light_level": 10,
+          "travel_particles": [
+            {
+              "id": "electric_spark",
+              "appearance": {},
+              "batch": { "count": 2.0, "shape": "CIRCLE", "anchor": "ENTITY", "alignment": "LOOK", "min_speed": 0.05, "max_speed": 0.1 }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "impacts": [
+    {
+      "action": { "type": "DAMAGE", "damage": { "spell_power_coefficient": 0.7, "knockback": 0.6 } },
+      "visuals": {
+        "particles": [
+          { "id": "electric_spark", "appearance": {}, "batch": { "count": 20.0, "shape": "SPHERE", "anchor": "ENTITY", "min_speed": 0.2, "max_speed": 0.7 } }
+        ]
+      },
+      "sound": { "id": "minecraft:entity.lightning_bolt.impact", "volume": 0.5, "pitch": 1.4 }
+    }
+  ],
+  "cost": {
+    "cooldown": { "group": "weapon" },
+    "item": { "id": "runes:lightning_stone" }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "lightning_expansion:lightning_robe_head",
+    "lightning_expansion:lightning_robe_chest",
+    "lightning_expansion:lightning_robe_legs",
+    "lightning_expansion:lightning_robe_feet"
+  ]
+}

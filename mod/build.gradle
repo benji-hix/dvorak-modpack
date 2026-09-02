@@ -1,0 +1,64 @@
+plugins {
+	id 'net.fabricmc.fabric-loom-remap' version "${loom_version}"
+}
+
+repositories {
+	exclusiveContent {
+		forRepository {
+			maven {
+				name = 'Modrinth'
+				url = 'https://api.modrinth.com/maven'
+			}
+		}
+		filter {
+			includeGroup 'maven.modrinth'
+		}
+	}
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	mappings loom.officialMojangMappings()
+	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+	// Compile against: Spell Engine (RPG Series equipment API, spell containers, tiny_config nested jar)
+	// and Spell Power (SpellSchools.LIGHTNING).
+	modImplementation "maven.modrinth:spell-engine:${project.spell_engine_version}"
+	modImplementation "maven.modrinth:spell-power:${project.spell_power_version}"
+
+	// Runtime only: what the dev client needs so referenced tags, reagents and deps resolve.
+	modRuntimeOnly "maven.modrinth:runes:${project.runes_version}"
+	modRuntimeOnly "maven.modrinth:cloth-config:${project.cloth_config_version}"
+	modRuntimeOnly "maven.modrinth:playeranimator:${project.playeranimator_version}"
+	modRuntimeOnly "maven.modrinth:armor-model-api:${project.armor_model_api_version}"
+	modRuntimeOnly "maven.modrinth:structure-pool-api:${project.structure_pool_api_version}"
+	// Wizards 3.1.1 (the pack's version) is unlisted on Modrinth, so its maven cannot serve it.
+	// The jar is the exact file from pack/mods/wizards.pw.toml, copied into libs/ (gitignored).
+	modRuntimeOnly files("libs/${project.wizards_jar}")
+	// tiny_config ships nested inside spell_engine (jar-in-jar); Loom does not expose nested jars at
+	// compile time, so the identical jar is extracted into libs/ and compiled against only.
+	modCompileOnly files("libs/tiny-config-3.1.0-fabric.jar")
+}
+
+processResources {
+	def version = project.version
+	inputs.property "version", version
+
+	filesMatching("fabric.mod.json") {
+		expand "version": version
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.release = 21
+}
+
+java {
+	sourceCompatibility = JavaVersion.VERSION_21
+	targetCompatibility = JavaVersion.VERSION_21
+}
+
+base {
+	archivesName = 'lightning-expansion'
+}

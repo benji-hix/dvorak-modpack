@@ -1,0 +1,59 @@
+{
+  "school": "spell_power:lightning",
+  "range": 32.0,
+  "tier": 3,
+  "group": "lightning_storm",
+  "learn": {},
+  "active": {
+    "cast": {
+      "duration": 5.0,
+      "type": "CHANNEL",
+      "channel": { "ticks": 25 },
+      "animation": { "id": "spell_engine:two_handed_channeling" },
+      "sound": { "id": "spell_engine:generic_arcane_casting", "randomness": 0.0 },
+      "particles": [
+        {
+          "id": "spell_engine:magic_spell",
+          "appearance": { "color": 4284932351, "motion": "ASCEND" },
+          "batch": { "count": 0.5, "shape": "PIPE", "anchor": "LAUNCH_POINT", "alignment": "LOOK", "min_speed": 0.1, "max_speed": 0.2 }
+        },
+        { "id": "electric_spark", "appearance": {}, "batch": { "count": 0.5, "shape": "PIPE", "anchor": "LAUNCH_POINT", "alignment": "LOOK", "min_speed": 0.1, "max_speed": 0.2, "width_factor": 2.0 } }
+      ]
+    }
+  },
+  "release": {},
+  "target": {
+    "type": "BEAM",
+    "beam": {
+      "color_rgba": 4284932351,
+      "width": 0.08,
+      "flow": 1.5,
+      "block_hit": {
+        "particles": [
+          { "id": "electric_spark", "appearance": {}, "batch": { "count": 1.0, "shape": "CIRCLE", "anchor": "ENTITY", "alignment": "LOOK", "min_speed": 0.1, "max_speed": 0.2 } }
+        ]
+      }
+    }
+  },
+  "impacts": [
+    {
+      "action": { "type": "DAMAGE", "damage": {} },
+      "visuals": {
+        "particles": [
+          { "id": "electric_spark", "appearance": {}, "batch": { "count": 4.0, "shape": "SPHERE", "anchor": "ENTITY", "min_speed": 0.2, "max_speed": 0.7 } },
+          {
+            "id": "spell_engine:magic_spell",
+            "appearance": { "color": 4284932351, "motion": "ASCEND" },
+            "batch": { "count": 2.0, "shape": "SPHERE", "anchor": "ENTITY", "min_speed": 0.1, "max_speed": 0.2 }
+          }
+        ]
+      },
+      "sound": { "id": "minecraft:entity.lightning_bolt.impact", "volume": 0.3, "pitch": 1.6 }
+    }
+  ],
+  "cost": {
+    "exhaust": 0.3,
+    "cooldown": { "duration": 10.0, "proportional": true },
+    "item": { "id": "runes:lightning_stone" }
+  }
+}

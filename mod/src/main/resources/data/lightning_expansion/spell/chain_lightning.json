@@ -1,0 +1,62 @@
+{
+  "school": "spell_power:lightning",
+  "range": 64.0,
+  "tier": 2,
+  "group": "lightning_storm",
+  "learn": {},
+  "active": {
+    "cast": {
+      "duration": 1.5,
+      "animation": { "id": "spell_engine:one_handed_projectile_charge" },
+      "sound": { "id": "spell_engine:generic_arcane_casting", "randomness": 0.0 },
+      "particles": [
+        {
+          "id": "spell_engine:magic_spell",
+          "appearance": { "color": 4284932351, "motion": "ASCEND" },
+          "batch": { "count": 1.0, "shape": "PIPE", "anchor": "ENTITY", "vertical_origin": 0.1, "min_speed": 0.05, "max_speed": 0.1, "width_factor": 2.0 }
+        }
+      ]
+    }
+  },
+  "release": {
+    "animation": { "id": "spell_engine:one_handed_projectile_release" }
+  },
+  "target": { "type": "AIM", "aim": { "sticky": true } },
+  "deliver": {
+    "type": "PROJECTILE",
+    "projectile": {
+      "launch_properties": {
+        "velocity": 1.25,
+        "sound": { "id": "minecraft:entity.lightning_bolt.impact", "volume": 0.5, "pitch": 1.5 }
+      },
+      "projectile": {
+        "homing_angle": 4.0,
+        "homing_angles": [ 60.0, 30.0, 15.0 ],
+        "homing_after_absolute_distance": 8.0,
+        "homing_after_relative_distance": 0.3,
+        "perks": { "bounce": 2, "pierce": 1 },
+        "client_data": {
+          "light_level": 12,
+          "travel_particles": [
+            { "id": "electric_spark", "appearance": {}, "batch": { "count": 3.0, "shape": "CIRCLE", "anchor": "ENTITY", "alignment": "LOOK", "min_speed": 0.05, "max_speed": 0.1 } }
+          ]
+        }
+      }
+    }
+  },
+  "impacts": [
+    {
+      "action": { "type": "DAMAGE", "damage": { "spell_power_coefficient": 0.8, "knockback": 0.5 } },
+      "visuals": {
+        "particles": [
+          { "id": "electric_spark", "appearance": {}, "batch": { "count": 40.0, "shape": "SPHERE", "anchor": "ENTITY", "min_speed": 0.2, "max_speed": 0.7 } }
+        ]
+      },
+      "sound": { "id": "minecraft:entity.lightning_bolt.impact", "volume": 0.6, "pitch": 1.2 }
+    }
+  ],
+  "cost": {
+    "cooldown": { "duration": 2.0, "proportional": true },
+    "item": { "id": "runes:lightning_stone" }
+  }
+}

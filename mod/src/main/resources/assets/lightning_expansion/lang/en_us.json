@@ -1,0 +1,28 @@
+{
+  "item.lightning_expansion.spell_book/lightning": "Tome of Lightning",
+  "item.lightning_expansion.spell_book/lightning.spell_binding.description": "Spell Book of Lightning Wizards, using storm magic to strike fast and leap between enemies\n- Strengths: Burst damage that chains across groups\n- Weaknesses: Low defense, spells need line of sight\n- Equipment: Lightly armored",
+  "item.lightning_expansion.spell_scroll/lightning": "Lightning Spell Scroll",
+
+  "spell.lightning_expansion.spark_bolt.name": "Spark Bolt",
+  "spell.lightning_expansion.spark_bolt.description": "Shoots a crackling spark, causing {damage} lightning spell damage.",
+  "spell.lightning_expansion.shock.name": "Shock",
+  "spell.lightning_expansion.shock.description": "Instantly shocks the targeted enemy, causing {damage} lightning spell damage.",
+  "spell.lightning_expansion.chain_lightning.name": "Chain Lightning",
+  "spell.lightning_expansion.chain_lightning.description": "Hurls a homing bolt that jumps to nearby enemies, causing {damage} lightning spell damage on each hit.",
+  "spell.lightning_expansion.arc_lightning.name": "Arc Lightning",
+  "spell.lightning_expansion.arc_lightning.description": "Channels a continuous arc of lightning, causing {damage} lightning spell damage every {interval} seconds.",
+  "spell.lightning_expansion.thunderstorm.name": "Thunderstorm",
+  "spell.lightning_expansion.thunderstorm.description": "Calls a storm around you, striking all nearby enemies for {damage} lightning spell damage every {interval} seconds.",
+  "spell.lightning_expansion.static_charge.name": "Static Charge",
+  "spell.lightning_expansion.static_charge.description": "Charges yourself with static: increased lightning spell power for {effect_duration} seconds and a burst of speed.",
+  "spell.lightning_expansion.shock_nova.name": "Shock Nova",
+  "spell.lightning_expansion.shock_nova.description": "Discharges a nova of lightning, causing {damage} lightning spell damage to all nearby enemies and briefly slowing them.",
+
+  "item.lightning_expansion.staff_lightning": "Lightning Staff",
+  "item.lightning_expansion.wand_lightning": "Lightning Wand",
+  "item.lightning_expansion.lightning_robe_head": "Lightning Hat",
+  "item.lightning_expansion.lightning_robe_chest": "Lightning Robe Top",
+  "item.lightning_expansion.lightning_robe_legs": "Lightning Robe Bottom",
+  "item.lightning_expansion.lightning_robe_feet": "Lightning Boots",
+  "itemGroup.lightning_expansion.general": "Lightning Expansion"
+}
