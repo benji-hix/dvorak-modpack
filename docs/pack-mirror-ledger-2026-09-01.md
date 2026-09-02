@@ -100,3 +100,16 @@ Open-Air was ahead here; Rain picked these up with no action needed.
 mirror, `azurelibarmor`, `more_rpg_library`, `elemental_wizards_rpg`, `bettercombat`, `armory`,
 and `arsenal` are all present, which retires corrections 2a–2c in that plan. Assumption 3h
 (packwiz serves raw non-metafile entries from the repo) is also now proven by 4c.
+
+## 6. Rain-only divergence: side flags (1.6.1, 2026-09-01)
+
+The 1.6.0 client launch failed at mod resolution: Tectonic 3.0.26 and Terralith 2.6.2 hard-depend
+on Lithostitched, which Open-Air marks `side = "server"`, so a client install never receives it.
+This also affects every Open-Air client installed through packwiz — worth reporting upstream.
+
+Rain 1.6.1 marks all nine server-side entries as `side = "both"`: cropxp, data-trades,
+custom-time-cycle, gazebos, lithostitched, noisium, nullscape, worn-path, yungs-better-dungeons.
+Reason beyond the launch fix: single-player runs an integrated server, so a local test instance
+must carry the server-side mods to match what Open-Air actually runs. Content and versions are
+unchanged; only `index.toml` hashes now differ from Open-Air 1.0.30. Watch item 4a (Custom Time
+Cycle 0.1.6 on the client) becomes live with this change.

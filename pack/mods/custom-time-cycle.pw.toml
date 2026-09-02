@@ -1,6 +1,6 @@
 name = "Custom Time Cycle"
 filename = "customtimecycle-fabric-0.1.6-1.21.1.jar"
-side = "server"
+side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/Xuf4fk5b/versions/AykEapdy/customtimecycle-fabric-0.1.6-1.21.1.jar"
