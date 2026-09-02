@@ -1,0 +1,13 @@
+name = "Additional Jewelry"
+filename = "additional_rpg_jewelry-fabric-2.3.0+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/rULzJh3O/versions/b9plbkCS/additional_rpg_jewelry-fabric-2.3.0%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "7af96c28cf73b25cd07f97e4f62e6cd4237e8e738ef9a1cebb912831059ade5d0bb841badeb5b25b6af9b4344394781980f3de5478ca8cc5dc3b7e776ce9f0a7"
+
+[update]
+[update.modrinth]
+mod-id = "rULzJh3O"
+version = "b9plbkCS"

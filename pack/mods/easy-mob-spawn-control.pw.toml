@@ -1,13 +1,13 @@
-name = "Easy Mob Spawn Control"
-filename = "easy_mob_spawn_control-1.5.8.jar"
+name = "Easy Mob Spawn Control - spawn rate, mob cap, disable bad mobs"
+filename = "easy_mob_spawn_control-1.5.7.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/pTXV6gwq/versions/AOqBQ2m3/easy_mob_spawn_control-1.5.8.jar"
+url = "https://cdn.modrinth.com/data/pTXV6gwq/versions/aknNqtEX/easy_mob_spawn_control-1.5.7.jar"
 hash-format = "sha512"
-hash = "ab89ae9beecd3e3351787fc64e9c1994d85daef778ddf849cb6b605a2c05aabfc27bb3c522549cffecdd1df767c35310e56e2d7455b8e4168aa55a091f75b410"
+hash = "004367ee1443699cf82b4ecbd55f13d76ff6d7f4d2bdcc8169ed26578be545c3d00caf9abf1decc9cfeee377cd051df2b99eafa69bb480e9745e155f9992c30c"
 
 [update]
 [update.modrinth]
 mod-id = "pTXV6gwq"
-version = "AOqBQ2m3"
+version = "aknNqtEX"

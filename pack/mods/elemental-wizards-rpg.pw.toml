@@ -1,0 +1,13 @@
+name = "Elemental Wizards (More RPG Classes)"
+filename = "elemental_wizards_rpg-fabric-3.1.0+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/PeZ4h4i0/versions/oe2HOmzq/elemental_wizards_rpg-fabric-3.1.0%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "5fd0b99821a9d9dd6b9bec77319cf8cb5f2a86c4e6c8d269b92953e8a7fa3d5f5d0bdc107dc0bff23a7f91aacceb5a5b6a116f9e67f238130f313b75aa4ec200"
+
+[update]
+[update.modrinth]
+mod-id = "PeZ4h4i0"
+version = "oe2HOmzq"

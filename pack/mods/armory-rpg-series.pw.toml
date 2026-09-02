@@ -1,0 +1,13 @@
+name = "Armory (RPG Series)"
+filename = "armory-fabric-1.5.1+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/PJvJUdGw/versions/whSvYwkK/armory-fabric-1.5.1%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "41dadd0b33524e95e171e2b14eb13b0cdeeaa58eba78b6697df6f509f8182c45034ce75fa83771857eaae424ed28a40a85f135002d3ca30362e198cd6bc0b156"
+
+[update]
+[update.modrinth]
+mod-id = "PJvJUdGw"
+version = "whSvYwkK"

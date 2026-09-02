@@ -3,6 +3,12 @@
 Fabric 1.21.1 modpack, distributed via [packwiz](https://packwiz.infra.link/). The
 Prism instance syncs itself to this repo on every launch — no manual updating.
 
+This is the **local development and testing pack**. As of 1.6.0 its contents mirror
+[Open-Air Settlement](https://github.com/Voraque/open-air-settlement) exactly, so anything built
+here is tested against what the server runs. See
+[docs/pack-mirror-ledger-2026-09-01.md](docs/pack-mirror-ledger-2026-09-01.md) for the delta that
+mirroring closed and the version downgrades it took.
+
 ## One-time setup (per machine)
 
 1. **Create the instance** in Prism Launcher (skip if you already have one):
@@ -46,6 +52,8 @@ Every instance picks up the change on its next launch.
 
 ## Repo layout
 
-- `pack/` — packwiz root (`pack.toml`, `index.toml`, mod/resourcepack metadata)
+- `pack/` — packwiz root (`pack.toml`, `index.toml`, and `mods/`, `resourcepacks/`,
+  `shaderpacks/`, `datapacks/`, `config/` metadata)
+- `docs/` — pack metadata: the mirror ledger, working plans
 - `setup-launcher.sh` — one-time per-machine instance wiring
 - `finalize-pack.sh` — historical one-time migration (cupboard + initial commit)

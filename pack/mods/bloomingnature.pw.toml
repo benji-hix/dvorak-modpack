@@ -1,0 +1,13 @@
+name = "[Let's Do] BloomingNature"
+filename = "letsdo-bloomingnature-fabric-1.1.10.jar"
+side = "both"
+
+[download]
+url = "https://www.cursemaven.com/curse/maven/lets-do-bloomingnature-962885/7829626/lets-do-bloomingnature-962885-7829626.jar"
+hash-format = "sha512"
+hash = "25390f59572aadcf20ff6bc9c43d164c17b1ce6a233820631f00ec6a22341807940e44376f7818419763649bbcc9caf9ac6f6fe2a4104ed4ea8958a787fb44db"
+
+[update]
+[update.curseforge]
+file-id = 7829626
+project-id = 962885

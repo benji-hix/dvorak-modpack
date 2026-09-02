@@ -1,0 +1,13 @@
+name = "LNE Wizards Add-On"
+filename = "lne_wizards-fabric-1.2.0+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/vukREL4F/versions/R52a4fQP/lne_wizards-fabric-1.2.0%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "3d7f61a595157ca3e233e18662b97549a0fcdb68e2a8f143b2a6c567e575cb3f5d773c038e024e9a531157adc0363d8c56e18815976b50d048918dcac0d266ce"
+
+[update]
+[update.modrinth]
+mod-id = "vukREL4F"
+version = "R52a4fQP"

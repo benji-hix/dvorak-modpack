@@ -1,0 +1,13 @@
+name = "Seramicx's Smooth F5"
+filename = "seramicx_smooth_f5-fabric-1.21.1-1.0.0.jar"
+side = "client"
+
+[download]
+url = "https://mediafilez.forgecdn.net/files/8153/564/seramicx_smooth_f5-fabric-1.21.1-1.0.0.jar"
+hash-format = "sha1"
+hash = "a7e1c888dd0918a8b85c5864cf8fe5312369f8de"
+
+[update]
+[update.curseforge]
+file-id = 8153564
+project-id = 1531249

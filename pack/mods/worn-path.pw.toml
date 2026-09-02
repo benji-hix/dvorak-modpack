@@ -1,0 +1,13 @@
+name = "Worn Path"
+filename = "worn_path-fabric-1.6.1+1.21.1.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/3XWY8ZZP/versions/7z5NBWN3/worn_path-fabric-1.6.1%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "adefbce56e325e615dfe734a6d02c02f85404f30924c6473a7015d554bb48652ea474f3f78025b354a3c3e46963fb391466e12d071559f0b8f323b4aa5a56aab"
+
+[update]
+[update.modrinth]
+mod-id = "3XWY8ZZP"
+version = "7z5NBWN3"

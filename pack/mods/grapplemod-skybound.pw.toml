@@ -1,0 +1,13 @@
+name = "Grappling Hook Mod: Skybound"
+filename = "grapplemod-1.1+1.21.1.fabric.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/tHHGzOFQ/versions/XahMTxfh/grapplemod-1.1%2B1.21.1.fabric.jar"
+hash-format = "sha512"
+hash = "5618f1ba78ce188656d1e3d2d41cdc76cca6985fa05172f40fc6c0380f18225b008d90d19981827b91a7eb302c9adb5bb6a0d61be24af6e74f4118ccf9d3f557"
+
+[update]
+[update.modrinth]
+mod-id = "tHHGzOFQ"
+version = "XahMTxfh"

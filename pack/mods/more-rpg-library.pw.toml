@@ -1,0 +1,13 @@
+name = "More RPG Library"
+filename = "more_rpg_library-fabric-2.7.1+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Wkc3lwHo/versions/2b7Juuc5/more_rpg_library-fabric-2.7.1%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "5f1825e53dc131cc6d2409d2d54433620d2029d23d804db31e2964939392c3b9955e44e16d3a187bd4376ff7d6cf0c9fed4daae6f15572f264763e0ab6f13152"
+
+[update]
+[update.modrinth]
+mod-id = "Wkc3lwHo"
+version = "2b7Juuc5"

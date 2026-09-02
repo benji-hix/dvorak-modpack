@@ -1,0 +1,13 @@
+name = "Copper Equipment"
+filename = "CopperEquipment-Fabric1.21.1-1.9.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/cDfJDREb/versions/F4CmPURe/CopperEquipment-Fabric1.21.1-1.9.1.jar"
+hash-format = "sha512"
+hash = "420b66c6e8aa5ec90594acddad900a53300988adf6322e10aa8b245760ca782cfb669ed93a8abaa47f051061bc387ff58feef739d612c1729b8d2f8b8470ede9"
+
+[update]
+[update.modrinth]
+mod-id = "cDfJDREb"
+version = "F4CmPURe"

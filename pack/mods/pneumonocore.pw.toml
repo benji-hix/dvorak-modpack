@@ -1,0 +1,8 @@
+name = "PneumonoCore"
+filename = "pneumonocore-1.3.1+1.21+A.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ZLKQjA7t/versions/2Wljsd7H/pneumonocore-1.3.1%2B1.21%2BA.jar"
+hash-format = "sha256"
+hash = "121364fe9b936c6599632e4dc234c45c835e2dd451d2fb9cc4851b1b545a7afb"

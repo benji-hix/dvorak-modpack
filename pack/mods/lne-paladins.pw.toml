@@ -1,0 +1,13 @@
+name = "LNE Paladins & Priests Add On"
+filename = "lne_paladins-fabric-1.2.0+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ysICqMga/versions/o1nJ33e3/lne_paladins-fabric-1.2.0%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "bb35bbbaf636a8da392b4f7a71ec527a93a3b36499aedb2aa9a9601e779c682ffa27800bc51e724e7cae77d6919ef2e890d8347ad0c87f40adcd06869f3ee62a"
+
+[update]
+[update.modrinth]
+mod-id = "ysICqMga"
+version = "o1nJ33e3"

@@ -1,0 +1,8 @@
+name = "Green Cuts (Open-Air build)"
+filename = "greencuts-fabric-1.21.1-1.0.4+openair.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Voraque/open-air-settlement/releases/download/v1.0.21-rc1/greencuts-rc1.jar"
+hash-format = "sha256"
+hash = "6671c3f03d6f2a60516745822898c00dcc092f62f5a34165cb6f619aabd11928"

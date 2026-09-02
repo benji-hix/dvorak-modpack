@@ -1,13 +1,16 @@
 name = "rain settlement"
 author = "Benjamin"
-version = "1.5.0"
+version = "1.6.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "296d0facaef09eeb1ed3f2659dcdb6be2718b4dfb4b35af7e9f5addcb8085867"
+hash = "8de8288ceb94f566c20a3cfbf19977ae0dac392cf1393244e65235aa4c08e3a2"
 
 [versions]
 fabric = "0.19.3"
 minecraft = "1.21.1"
+
+[options]
+datapack-folder = "datapacks"

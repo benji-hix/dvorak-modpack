@@ -1,0 +1,8 @@
+name = "Gravestones"
+filename = "gravestones-1.2.6+1.21.1+A.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Heh3BbSv/versions/T6IjSlBa/gravestones-1.2.6%2B1.21.1%2BA.jar"
+hash-format = "sha256"
+hash = "386e3155460dd70cf4cdc2ab154ad3bc0aec1b1b3102590f08d9c910ecbd3f08"

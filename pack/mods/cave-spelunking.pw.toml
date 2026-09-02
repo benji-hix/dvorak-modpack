@@ -1,0 +1,13 @@
+name = "Cave Spelunking"
+filename = "caveore-fabric-1.21.1-4.0.jar"
+side = "both"
+
+[download]
+url = "https://www.cursemaven.com/curse/maven/caveore-468643/6445024/caveore-468643-6445024.jar"
+hash-format = "sha512"
+hash = "8e1802a210564f5f2376747a1c358809a0d585f898f3036474109721e81f352f8936da9b776824ed7ae15420f36b69c6398cb80b27dd2098b5a6e353d49f5362"
+
+[update]
+[update.curseforge]
+file-id = 6445024
+project-id = 468643

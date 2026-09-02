@@ -1,0 +1,13 @@
+name = "Relics (RPG Series)"
+filename = "relics-fabric-1.4.0+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/BDQucwF0/versions/N9LYLPCa/relics-fabric-1.4.0%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "3a80266a9b9c136c49421ede0b05b7fa4bf43cae1c6b2fdf7744053b326cc3a719e37f6785467060d05584d608962bee517e3f1442024fadaf138a3e98718a66"
+
+[update]
+[update.modrinth]
+mod-id = "BDQucwF0"
+version = "N9LYLPCa"

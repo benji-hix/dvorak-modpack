@@ -1,0 +1,13 @@
+name = "Archers Expansion (More RPG Classes)"
+filename = "archers_expansion-fabric-2.1.0+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/1BHIIm4m/versions/AzQF18oI/archers_expansion-fabric-2.1.0%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "bc5954fd2bb020c26d28ac663c65ce2e3de74d01f58ab4aaef5e8a77cf05665b1604c41db03b5b726e6ebbdd74f2786a1342ea9ee5f904a83550ea836f7bb950"
+
+[update]
+[update.modrinth]
+mod-id = "1BHIIm4m"
+version = "AzQF18oI"

@@ -1,6 +1,6 @@
 name = "Structure Pool API"
 filename = "structure_pool_api-fabric-1.2.1+1.21.1.jar"
-side = "server"
+side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/LrYZi08Q/versions/Y6aBoKEl/structure_pool_api-fabric-1.2.1%2B1.21.1.jar"

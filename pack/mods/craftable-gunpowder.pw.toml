@@ -1,13 +1,13 @@
-name = "Craftable Gunpowder"
-filename = "craftable-gunpowder-1.4.jar"
+name = "Craftable Gunpowder[MOD]"
+filename = "craftable-gunpower-mod-2.0-1.21X.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/SKou4IHt/versions/FUYkens9/craftable-gunpowder-1.4.jar"
+url = "https://cdn.modrinth.com/data/WgFy7xcE/versions/Q0VL8Yvk/craftable-gunpower-mod-2.0-1.21X.jar"
 hash-format = "sha512"
-hash = "187ea77b2c9b389a3f80cdaf1af02002079c477c19cd699016231e087e4c68794ec6df39c23120ebaca1eb4fe59e835406f8607028300ba37f359c8081b2cd72"
+hash = "a23d6936d206349372cd019a0a8b7d1be7f5dc3d9c6059775bc0c6c680a1bfa3163f9dad9cd931ffb3fdc7c2af1742610d417b30f72a5ce04fb0abe06d679581"
 
 [update]
 [update.modrinth]
-mod-id = "SKou4IHt"
-version = "FUYkens9"
+mod-id = "WgFy7xcE"
+version = "Q0VL8Yvk"

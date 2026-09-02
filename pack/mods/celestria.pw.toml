@@ -1,6 +1,6 @@
 name = "Celestria"
 filename = "celestria-fabric-2.0.0.jar"
-side = "both"
+side = "client"
 
 [download]
 url = "https://cdn.modrinth.com/data/GoCfVRkX/versions/vz64cT5u/celestria-fabric-2.0.0.jar"

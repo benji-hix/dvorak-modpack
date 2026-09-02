@@ -1,0 +1,13 @@
+name = "Forcemaster (More RPG Classes)"
+filename = "forcemaster_rpg-fabric-3.1.0+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/K3yHebFL/versions/60qSBk5A/forcemaster_rpg-fabric-3.1.0%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "c146f31afaf46d3e3cd56be2210226c4f3f7c3f7da6b71b49824dd7e5c52f3ee15bcc6b2d421f0d95482f92e5bcecf10a022bbb9bc3828c81abc97dc28e5f6bb"
+
+[update]
+[update.modrinth]
+mod-id = "K3yHebFL"
+version = "60qSBk5A"

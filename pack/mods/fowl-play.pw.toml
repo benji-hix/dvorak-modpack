@@ -1,0 +1,8 @@
+name = "Fowl Play (Open-Air repack)"
+filename = "fowlplay-1.2.3+1.21.1-fabric-no-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Voraque/open-air-settlement/releases/download/v1.0.21-rc1/fowlplay-rc1.jar"
+hash-format = "sha256"
+hash = "f28294c2ed9fcfbcef304177f1267aec17b9046aeff8a949abbafbe085e7b750"

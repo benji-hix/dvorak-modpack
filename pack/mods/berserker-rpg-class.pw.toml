@@ -1,0 +1,13 @@
+name = "Berserker (More RPG Classes)"
+filename = "berserker_rpg-fabric-3.1.0+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/8hqOZzxM/versions/pjAHmQF7/berserker_rpg-fabric-3.1.0%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "46a8244db8e0d7ef8f5df7acd66e12530984b8bb2ec7434ae5a13d66f991a62ca1ed10110f6f7f482edc7a2553d47acfc5e1a5c30b380f7598dc2992761c076b"
+
+[update]
+[update.modrinth]
+mod-id = "8hqOZzxM"
+version = "pjAHmQF7"

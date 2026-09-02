@@ -1,0 +1,13 @@
+name = "Sensible Trade Overhaul"
+filename = "Sensible Trade Overhaul.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/RV8yU1MT/versions/naRUuu3Y/Sensible%20Trade%20Overhaul.zip"
+hash-format = "sha512"
+hash = "30c007ec37609aa4a61cc4762745384c451dd97b4372ebfadd47d1a3b45e54df49d1f5071f058214a5424249ec490a305c1c98154c47d43ce30740c2589edc8a"
+
+[update]
+[update.modrinth]
+mod-id = "RV8yU1MT"
+version = "naRUuu3Y"
