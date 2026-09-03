@@ -165,3 +165,83 @@ Note on attribution: the macOS crash report for the 22:06 run (`pid 81241`, laun
 predates `glider-accessory-0.1.0.jar` being copied into `mods/` at 22:26, so neither that crash
 nor this one implicates the new mod. `glider_accessory 0.1.0` loaded in the 00:56 session with no
 mixin error, and its data pack was picked up on world load ("Found new data pack glider_accessory").
+
+## 9. Parity raises applied to both packs (1.7.0, 2026-09-03)
+
+Reviewed the live Rain↔Open-Air delta against Open-Air 1.0.31. Only 11 files differed, and
+most of it was section 6's deliberate side-flag divergence. Two Open-Air bugs and eight
+version raises came out of it. Revert tag in both repos: `pre-parity-2026-09-03`
+(Rain `9aac0e8`, Open-Air `a707760`).
+
+### 9.1 Open-Air bugs fixed upstream (OAS `66ffce3`, promoted 1.0.32)
+
+- 9a. **Lithostitched was `side = "server"`** while Terralith 2.6.2 (`depends lithostitched
+  >=1.7.7`) and Tectonic 3.0.26 (`depends lithostitched *`) were `side = "both"`. Every
+  packwiz client install of Open-Air failed at Fabric mod resolution. This is section 6's
+  finding, now fixed at the source instead of worked around in Rain. Open-Air had already hit
+  this exact fault in `7794429` and fixed the two direct dependents without following the
+  chain down. Only Lithostitched was flipped; the other eight server-side entries stay
+  `server` upstream, because a dedicated server does not need to ship them to clients.
+- 9b. **Nullscape shipped twice** (watch item 4e), same Modrinth project `LPjGiSO4` at 1.2.14,
+  as both `mods/nullscape.pw.toml` (jar, server) and `datapacks/nullscape.pw.toml` (zip,
+  both). Kept the mod. The datapack copy installed to `<root>/datapacks`, which is not a
+  world datapack path on either side, so it was probably never loading. Removed in both packs.
+
+### 9.2 Version raises — the section 1 downgrades, reversed
+
+Rain took all eight on `main` (1.7.0) because Rain is the testbed. Open-Air took only the
+client-only four on `main` (1.0.32); the four both-side raises are staged unmerged on branch
+`server-window/both-side-raises` (1.0.33) and must land with a server update in the same pass.
+
+| # | Mod | was | now | side | where |
+|---|---|---|---|---|---|
+| 1a | Sodium | 0.6.13 | 0.8.12 | client | both packs, main |
+| 1b | Iris Shaders | 1.8.8 | 1.8.14-beta.1 | client | both packs, main |
+| 1e | Shoulder Surfing Reloaded | 4.10.5 | 5.0.11 | client | both packs, main |
+| 1f | Interactive Foliage | 1.1.1 | 1.3.0 | client | both packs, main |
+| 1c | Supplementaries | 3.6.7 | 3.9.3 | both | Rain main; OAS branch |
+| 1d | Cupboard | 1.21-2.9 | 1.21.1-4.0 | both | Rain main; OAS branch |
+| 1g | Gravestones | 1.2.6 | 1.4.2 | both | Rain main; OAS branch |
+| 1h | Easy Mob Spawn Control | 1.5.7 | 1.5.8 | both | Rain main; OAS branch |
+
+Every jar filename above matches what Rain ran pre-mirror at `23eccac`, so these are versions
+this machine has already booted at least once — except Supplementaries, where Rain ran 3.9.3
+and Open-Air's own newest is 3.9.7 (not taken; 3.9.3 is the proven build).
+
+### 9.3 The locked set, resolved
+
+Section 1's "locked set" claim was right about the coupling and wrong about the direction.
+Verified from Modrinth: Iris 1.8.14-beta.1 is the only 1.21.1 Iris above 1.8.8, and it names
+Sodium `0.8.12-beta.1` as a required version. So Iris forces Sodium up, not down. Supplementaries
+was never chained to Sodium at all — 3.9.7 declares exactly one dependency, Moonlight. Open-Air's
+`CLAUDE.md` line "Supplementaries newer than 3.6.7 needs Sodium 0.8.x" describes an observed
+runtime incompat, not metadata, and raising Sodium simply removes the blocker. Corrected in
+Open-Air's `CLAUDE.md`.
+
+Dependency floors read from the jars themselves, not the listings:
+
+| jar | requires | pack pins | headroom |
+|---|---|---|---|
+| supplementaries 3.9.3 | `moonlight >=1.21-3.5.0` | Moonlight 3.5.0 | none, exactly at floor |
+| easy_mob_spawn_control 1.5.8 | `fabricloader >=0.19.3` | Loader 0.19.3 | none, exactly at floor |
+| gravestones 1.4.2 | `pneumonocore >=1.3.0` | PneumonoCore 1.3.1 | one patch |
+| cupboard 1.21.1-4.0 | no new deps | — | Cave Spelunking 4.0 wants `cupboard "*"` |
+
+### 9.4 Not taken
+
+- 9c. **Custom Time Cycle stays split**: Rain 0.1.4 (section 7), Open-Air 0.1.6. Section 7 left
+  this open. It is now closed: on Open-Air, Custom Time Cycle is `side = "server"` and Do a
+  Barrel Roll is `side = "client"`, so the two never co-load and the bundled
+  fabric-permissions-api 0.3.3 cannot be reached. Rain's integrated server is what put them in
+  one JVM. No change needed upstream.
+- 9d. Modern UI, Critical Strike, Ecological, Item Components, Vanilla Backport (section 3.1)
+  stay dropped. These are content additions, not parity restoration.
+- 9e. Zoomify and the four resource packs (Better Leaves, Better Grass, Default Dark Mode,
+  Darkomizer) stay dropped. Client-only and free to re-add to either pack; a taste call, not a
+  mirror fix.
+
+### 9.5 Rain caught up on Gliding Accessories
+
+Rain's pack had no `gliding-accessories` entry while Open-Air 1.0.31 ships 0.1.1, so Rain was
+testing the glider slot from a loose jar in the instance rather than from the pack. Added at
+0.1.1; release asset fetched and its sha512 matches the manifest.

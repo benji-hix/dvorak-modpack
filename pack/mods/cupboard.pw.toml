@@ -1,13 +1,13 @@
 name = "Cupboard"
-filename = "cupboard-fabric-1.21-2.9.jar"
+filename = "cupboard-fabric-1.21.1-4.0.jar"
 side = "both"
 
 [download]
-url = "https://www.cursemaven.com/curse/maven/cupboard-326652/6114706/cupboard-326652-6114706.jar"
+url = "https://www.cursemaven.com/curse/maven/cupboard-326652/8623564/cupboard-326652-8623564.jar"
 hash-format = "sha512"
-hash = "baefd105934841cedfc7ded909a6fbd8105238d864eb17871c1f28142562e42ec21e3b4d1b0d1f511cef38d875861665b3cf97cba497afd26f3ff60c47d63ac0"
+hash = "35a2146dc466bd225f766159f508c2543d42318d9d69d181853bfe0764bda6fb10692cb86b4a857ab41546a2d27e9c9cc68ef8263672f064f17d93105a2229c0"
 
 [update]
 [update.curseforge]
-file-id = 6114706
+file-id = 8623564
 project-id = 326652
