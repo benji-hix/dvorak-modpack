@@ -1,0 +1,8 @@
+name = "Gliding Accessories"
+filename = "gliding-accessories-0.1.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/benji-hix/Gliding-Accessories/releases/download/v0.1.1/gliding-accessories-0.1.1.jar"
+hash-format = "sha512"
+hash = "cf18a453378b5b54dbb1a9b2662c9c89a8c7cc7c12586057c815b8c1cf6280dcfff7bddd398913d8839456fafa64ac801d9ab4dfbb3ab982f023db79691ce0ee"
