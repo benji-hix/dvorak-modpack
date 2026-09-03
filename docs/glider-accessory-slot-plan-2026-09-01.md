@@ -429,3 +429,22 @@ see section 9b, still Benjamin's call and the server operator's.
 
 Unrelated but discovered here: the JVM native crashes are a bundled-JDK problem, not this mod's.
 See ledger section 8a.
+
+### Correction to 3b — 2026-09-02
+
+**Section 3b is wrong and should not be trusted.** It states that every gate funnels through
+`isHoldingGlider` and `getGliderItemInHand`. Disassembling every caller in `gliding-1.1.0.jar`
+finds four gates, not two. The other pair is `GliderUtil.mainHandHoldingGlider` and
+`GliderUtil.offHandHoldingGlider`, called by `HeldItemRendererMixin` (6 sites),
+`BipedEntityModelMixin` (3) and `ItemRendererMixin` (1) — the first-person hand and the arm and
+limb pose — plus `GliderClientUtil.isActivatingGlider` in its `offHandEnabled == false` branch.
+
+Consequence: 0.1.0 glided correctly but with no animation, because only the physics and the
+back-mounted render go through the patched pair. Criterion 1d passed on the back model alone and
+did not catch it. Fixed in Gliding Accessories 0.1.1 by widening `mainHandHoldingGlider` as well,
+leaving `offHandHoldingGlider` honest so nothing sees a glider in both hands.
+
+Corollary for anything built on this plan: hand priority must read the two ItemStacks directly
+rather than calling Gliding's lookups, because those are now widened. Routing through them makes
+an equipped glider read as held, so `getGliderItemInHand` returns null — which
+`playerGliderMovement` dereferences **on the server**, per 3c.
