@@ -9,6 +9,14 @@ file = "config/nutritionz.json5"
 hash = "a55dccba7f9f365bbae773d5e7438b693bce9484894bcbcbd7407aceaf91cfec"
 
 [[files]]
+file = "config/rpg_series/loot_equipment_v2.json"
+hash = "1f01debcd9b2bc2d83c2d8d82c1250c099228ff3c573a2ba41feeb1ebbc8a251"
+
+[[files]]
+file = "config/rpg_series/loot_scrolls_v2.json"
+hash = "7f2be205eb482a89291b0e5d191d66f1c9062680efe445695fde0cc619a9ba53"
+
+[[files]]
 file = "datapacks/open-air-resources/data/minecraft/loot_table/entities/zombie.json"
 hash = "3ccafc7868227bd5794a676f36a64c3c69961b003f5cfbce6cfa26679ad42792"
 
@@ -792,6 +800,18 @@ metafile = true
 file = "mods/zombie-awareness.pw.toml"
 hash = "9ebacb765e15c0a6cff4e470941cc371c6f5d6286fd0ce84dd4c5fa9a6cd6d2a"
 metafile = true
+
+[[files]]
+file = "moonlight-global-datapacks/skill-tree-tuning/data/skill_tree_rpgs/puffish_skills/categories/class_skills/experience.json"
+hash = "e55620e9957203ea0ff1c7c1e1dad0d096a21ab13b6d0739d640f6be00897d1b"
+
+[[files]]
+file = "moonlight-global-datapacks/skill-tree-tuning/data/skill_tree_rpgs/puffish_skills/categories/weapon_skills/experience.json"
+hash = "b7604ecf64fe71a45899f441c344b24af6a3c67c61f50e38096a6e58b860fd46"
+
+[[files]]
+file = "moonlight-global-datapacks/skill-tree-tuning/pack.mcmeta"
+hash = "a4455d6156b1b94a71ed77ea6de917f92d3d88d089c5d0b53a3cf8d1910531e9"
 
 [[files]]
 file = "resourcepacks/fa-player-extension.pw.toml"
