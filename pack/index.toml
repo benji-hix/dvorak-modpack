@@ -242,11 +242,6 @@ hash = "b38d1a764fb145866d63282dae3e8c841a9b0e73cf122e80a4bea44c6fdae16a"
 metafile = true
 
 [[files]]
-file = "mods/custom-time-cycle.pw.toml"
-hash = "919b10bf19d596b43f04c212e4b7a26c58df3afd35984aee56aa2a251204fda2"
-metafile = true
-
-[[files]]
 file = "mods/damagenumbers.pw.toml"
 hash = "3702ef1f72bad53fb537784661828171b337d97584afe65bc216ed98d003f622"
 metafile = true

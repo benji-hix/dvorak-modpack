@@ -245,3 +245,14 @@ Dependency floors read from the jars themselves, not the listings:
 Rain's pack had no `gliding-accessories` entry while Open-Air 1.0.31 ships 0.1.1, so Rain was
 testing the glider slot from a loose jar in the instance rather than from the pack. Added at
 0.1.1; release asset fetched and its sha512 matches the manifest.
+
+## 10. Custom Time Cycle removed on both packs (1.7.3, 2026-09-04)
+
+Section 9c's conclusion was wrong. Open-Air's dedicated server crashed on 2026-09-04 with the same
+`NoSuchMethodError ServerPlayer.method_64396`, reached through Waystones → Balm's
+fabric-permissions-api integration, in a JVM that never loaded Do a Barrel Roll (it is
+`side = "client"` on Open-Air and does not appear in that boot log). The nested
+fabric-permissions-api 0.3.3 in Custom Time Cycle 0.1.6 is reachable by any permission check, not
+only DABR's; side-splitting the two mods was never a fix. Open-Air 1.0.35 removes the mod; Rain
+1.7.3 removes it too (Rain's 0.1.4 pin nested 0.3.1 and was not crashing, removal is for parity).
+Day/night length is vanilla on both packs.
