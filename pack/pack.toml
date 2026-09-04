@@ -1,12 +1,12 @@
 name = "rain settlement"
 author = "Benjamin"
-version = "1.7.1"
+version = "1.7.2"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "abba95191bb75caefd7b9f82b621670e53513020563d7c6214886ca9e733d575"
+hash = "d48317cc43d634ce914cf962b418074ad32143e512dd2795ce2214cb5fe8f311"
 
 [versions]
 fabric = "0.19.3"

@@ -803,11 +803,11 @@ metafile = true
 
 [[files]]
 file = "moonlight-global-datapacks/skill-tree-tuning/data/skill_tree_rpgs/puffish_skills/categories/class_skills/experience.json"
-hash = "e55620e9957203ea0ff1c7c1e1dad0d096a21ab13b6d0739d640f6be00897d1b"
+hash = "f5eada01d9ecbdbd2b6873d2de4d5ef7968821ce990124a8f51572ee0b924f49"
 
 [[files]]
 file = "moonlight-global-datapacks/skill-tree-tuning/data/skill_tree_rpgs/puffish_skills/categories/weapon_skills/experience.json"
-hash = "b7604ecf64fe71a45899f441c344b24af6a3c67c61f50e38096a6e58b860fd46"
+hash = "3761a6b3b51ca532b571c2dc029bd0f17b734ca488e56cfb36a77ff36f9e9f17"
 
 [[files]]
 file = "moonlight-global-datapacks/skill-tree-tuning/pack.mcmeta"
